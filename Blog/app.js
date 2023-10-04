@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const path = require('path');
 
 const postController = require('./controllers/postController');
 
@@ -20,3 +21,5 @@ app.post('/posts/:id/comment', postController.createComment);
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+app.use(express.static(__dirname + '/public'));

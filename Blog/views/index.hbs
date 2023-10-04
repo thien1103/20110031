@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <title>Blog</title>
 </head>
 <body>
   <h1>Blog</h1>
-  <ul>
+  <div class="container">
+  <ul style="color:blueviolet; list-style-type:disc;">
     {{#each posts}}
       <li>
-        <a href="/posts/{{id}}">{{title}}</a>
+        <a href="/posts/{{id}}" style="color:rgb(11, 46, 78);" >{{title}}</a>
       </li>
     {{/each}}
   </ul>
-  <a href="/posts/create">Create New Post</a>
+  <a href="/posts/create" style="margin-top:30px; border: 1px solid; background-color:rgb(5, 177, 33); border-radius:2px; padding: 2px 2px;">Create New Post</a>
+  </div>
 </body>
 </html>

@@ -1,42 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  box-sizing: border-box;
   
-  header {
-    background-color: #f2f2f2;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  article {
-    margin-bottom: 20px;
-  }
-  
-  form {
-    margin-top: 10px;
-  }
-  
-  input[type="text"] {
-    padding: 5px;
-    width: 300px;
-  }
-  
-  button[type="submit"] {
-    padding: 5px 10px;
-  }
+}
+body{
+  margin: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: sandybrown;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+}
+
+.container{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
