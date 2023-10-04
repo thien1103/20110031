@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{post.title}}</title>
+</head>
+<body>
+  <h1>{{post.title}}</h1>
+  <p>{{post.content}}</p>
+  <h2>Comments</h2>
+  <ul>
+    {{#each post.comments}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <h3>Add a Comment</h3>
+  <form action="/posts/{{post.id}}/comment" method="POST">
+    <label for="comment">Comment:</label>
+    <input type="text" id="comment" name="comment"><br>
+    <button type="submit">Submit</button>
+  </form>
+  <a href="/posts/{{post.id}}/edit">Edit</a>
+  <form action="/posts/{{post.id}}/delete" method="POST">
+    <button type="submit">Delete</button>
+  </form>
+</body>
+</html>
